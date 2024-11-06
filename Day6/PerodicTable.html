@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerodicTable</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #494545;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px;
+        }
+
+        .element {
+            width: 85px;
+            background: #d59a56;
+            text-align: center;
+            height: 65px;
+            margin: 18px;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            border: 2px solid #60584e45;
+            border-radius: 2px;
+            cursor: pointer;
+            box-shadow: 0px 1px 3px 1px #ab8a59e6;
+            transition: cubic-bezier(0.44, -0.15, 1, 1);
+        }
+
+        .element:hover {
+            background: #ce7f0b;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            color: #f9f4f4;
+            font-size: 40px;
+            margin: 25px 0;
+        }
+  
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PerodicTable</h1>
+        <section class="main">
+
+            <!-- <div class="element">
+                1
+            </div> -->
+
+
+
+        </section>
+    </div>
+
+
+    <script>
+        let mainBody = document.querySelector(".main");
+        function createPeriodicElement(symbol,atomicNum,name){
+            let createDiv = document.createElement('div');
+            createDiv.classList.add('element');
+            createDiv.innerText = symbol;
+            mainBody.append(createDiv);
+            createDiv.setAttribute("data-atomic-number",atomicNum)
+            createDiv.setAttribute("data-element-name",name);
+        }
+
+        let handleELementClick= (e) => {
+            const target =e.target
+            if(target.classList.contains("element")){
+                const atomicNum = target.getAttribute("data-atomic-number");
+                const elementName = target.getAttribute("data-element-name");
+                alert(`Atomic Number : ${atomicNum}\nElement Name : ${elementName}`);
+            }
+        }
+
+        function initializePeriodicTable() {
+            for (let i = 1; i < 51; i++) {
+                let element = createPeriodicElement(`Elem ${i}`,i, `Element ${i}`);
+
+                /* let createDiv = document.createElement('div');
+                 createDiv.classList.add('element');
+                 createDiv.innerText = i;
+                 mainBody.append(createDiv); */
+            }
+
+            mainBody.addEventListener('click',handleELementClick)
+        }
+
+        initializePeriodicTable();
+    </script>
+</body>
+
+</html>
