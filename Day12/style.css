@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+*{padding:0;margin:0;}
+body{
+	font-family: 'Didact Gothic', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
+	color:red;
+	font-size:16px;
+	font-weight:400;
+	
+}
+ h1,h2,h3,h4,h5,h6{font-family: 'Nunito', sans-serif;font-weight:400;}
+.font-nunito{
+	 font-family: 'Nunito', sans-serif;font-weight:400;
+ }
+
+a{text-decoration:none;}
+.d-flex{display:flex;}
+.justify-between{justify-content:space-between;}
+.text-align-center{align-items:center;}
+.text-color{color:#ffffff;}
+.bg{background:#273c66;}
+.btn-bg{background:#21a7d0;}
+.btn {
+	padding:21px 35px;
+	font-size:15px;
+	font-weight:550;
+	text-transform:capitalize;
+	border-radius:3px;
+	color:white;
+	 font-family: 'Nunito', sans-serif;
+	
+}
+
+.container{width:1170px;margin:auto;}
+
+				/*Start Code*/
+
+.top-header {
+    background: #9dc7d3;
+}
+.top-left {
+    flex-basis: 33%;
+}
+
+.top-right {
+    flex-basis: 67%;
+}
+
+.templeate-name {
+    font-size: 36px;
+    font-weight: 500;
+ 
+}
+
+
+.dwonload-template a {
+    background: white;
+    color: #83999f;
+    font-size: 16px;
+    padding: 11px 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.mainmenu-items ul {list-style: none;}
+
+.right-header {
+    padding: 0px 25px;
+}
+
+.left-header {
+    padding: 0px 20px;
+}
+.logo img {
+    width: 60px;
+    margin-right: 25px;
+}
+
+ul.maianmenu li a {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 600;
+    padding: 30px 20px;
+    display: block;
+}
+ul.maianmenu li a i {
+    padding-left: 7px;
+}
+li.dropdwon{
+	position:relative;
+}
+li.dropdwon ul.sub-menu {
+    position: absolute;
+	background: #9dc7d3;
+	transition:0.5s;
+	transform-origin:top;
+	transform:scaleY(0);
+	opacity:0;
+	z-index:5;
+}
+ul.maianmenu li.dropdwon:hover .sub-menu {
+	opacity:1;
+	transform:scaleY(1);
+}
+
+ul.sub-menu li a {
+    padding: 6px 25px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+    width: 200px;
+}
+
+ul.sub-menu li:last-child a {
+    padding-bottom: 20px;
+}
+
+.header2-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+	position:relative;
+}
+.text.about.html {
+    position: absolute;
+    top: 300px;
+    left: 160px;
+}
+
+.text.about.html h1 {
+    color:#252c26bd;
+    font-size: 91px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.Pimage-box {
+    width: 340px;
+    height: 480px;
+    background: #2cc747;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 9px solid #2cc747;
+}
+
+.Pimage-box img {
+    width: 100%;
+}
+
+.Pimage-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+	position:relative;
+}
+
+.lowabout {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.lowabout h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lowabout h4 {
+    color: #fff;
+    font-size: 38px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+section#project-image {
+    padding-top: 100px;
+}
+
+.project-about {
+    background: #e2f938;
+    width: 51%;
+    height: 40%;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 70px;
+}
+
+.project-about h3 {
+    color: #444;
+    font-size: 37px;
+    padding-top: 50px;
+    font-weight: 700;
+}
+.overlay{
+    position: absolute;
+    background: linear-gradient(498deg, #13eb39f2, transparent);
+    height: 89%;
+    z-index: 1;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.5s;
+    width: 29.5%;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+.content-wrapper{
+	position:relative;
+}
+.BackgroundColor {
+    background: #ffff00fc;
+    width: 100%;
+    height: 50%;
+    bottom: -990px;
+    position:absolute;
+    z-index: -2;
+}
+section#our-service {
+    padding-top: 200px;
+}
+
+.service-background {
+    background: yellow;
+    width: 55%;
+    height: 45%;
+    text-align: center;
+    margin-bottom: 90px;
+    border-radius: 3px;
+}
+
+.service-background h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique';
+    padding: 50px;
+}
+
+.service-image-box {
+    flex-basis: 24.8%;
+    overflow: hidden;
+    height: 550px;
+    position: relative;
+    border-radius:5px;
+}
+
+.service-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.service-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #7a877b87;
+}
+
+.overlay-text h6 {
+    color: #ffffff8f;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.overlay-text h3 {
+    color: #ffffff8f;
+    font-size: 37px;
+    font-weight: 500;
+    font-family: 'Zen Kaku Gothic Antique';
+}
+
+.overlay-text {
+    left: 45px;
+    position: absolute;
+    top: 52px;
+}
+.service-image-box .service-overlay:hover{
+    background:#2cc74794
+}
+
+.team-image-cover{
+    width: 24%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    margin-top: 100px;
+}
+
+.team-image-box img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.team-image-overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    left: 50%;
+    height: 85%;
+    transform: translateX(-50%)scaleX(0);
+    transition:0.5s;
+    opacity:0;
+    transform-origin:center;
+    background: #4caf50cc;
+}
+
+.team-image-cover .team-image-box:hover .team-image-overlay{
+	opacity:1;
+	transform: translateX(-50%)scaleX(1);
+}
+
+.team-image-overlay p {
+    color: #fff;
+    width: 201px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 62px 45px;
+}
+.team-background {
+    background: #e2f938;
+    width: 52%;
+    height: 37%;
+    border-radius: 3px;
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.team-background .team-text {
+    font-size: 42px;
+    color: #000000b0;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique';
+    padding-top: 50px;
+}
+
+.team-image-about {
+    background: #e2f938;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+}
+
+.tream-people-nam {
+    margin: 8px 0px;
+}
+
+.tream-people-nam h5 {
+    color: #000000db;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Zen Kaku Gothic Antique';
+}
+
+.tream-people-nam h6 {
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.team_image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.client-BG {
+    background: #e2f938;
+    margin: 95px 0px;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.client-BG h1 {
+    color: #001;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Zen Kaku Gothic Antique';
+    padding-top: 40px;
+}
+
+.logo-box {
+    flex-basis: 25%;
+    margin: 15px 40px;
+}
+
+.logo-box img {
+    width: 86px;
+}
+.logo-box img {
+    width: 80px;
+}
+
+.top-logo-box.d-flex {
+    margin-bottom: 20px;
+    justify-content: space-between;;
+    text-align: center;
+}
+
+.bottom-logo-box.d-flex {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.bottom-logo-box .logo-box:first-child img {
+    width: 115px;
+}
+
+.bottom-logo-box .logo-box:first-child {
+    padding: 6px 0px;
+}
+
+
+.client-radius {
+    background: #ffff00a3;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    top: -55px;
+    left: 33px;
+    text-align: center;
+    position: absolute;
+}
+
+.logo-wrapper {
+    position: relative;
+}
+
+.check-image img {
+    width: 95px;
+    object-fit: cover;
+    border-radius: 100%;
+    height: 95px;
+}
+
+.check-image {
+    width: 163px;
+    height: 130px;
+   
+}
+
+.check-box.d-flex {
+    width: 50%;
+}
+
+.check-box-about p {
+    color: black;
+    font-size: 15px;
+    font-weight: 450;
+    font-family: 'Zen Kaku Gothic Antique';
+    
+}
+
+.check-box-about {
+    width: 315px;
+}
+
+.check-box-about h6 {
+    color: #1e1a1abf;
+    font-size: 11px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 500;
+    padding-top: 10px;
+}
+.check-box-about h5 {
+    color: #000000eb;
+    font-size: 14px;
+    font-weight: 530;
+    font-family: 'Nunito';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
