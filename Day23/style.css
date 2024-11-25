@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+ }
+
+.my_btn{
+    background-color: #FE8C45;
+    color: #ddd; 
+    /* border-radius: 2rem;
+    padding: 0 1rem; */
+}
+
+/* .top-image{
+
+} */
+
+
+@media only screen and (max-width: 576px) {
+    body{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    /* .my_btn{
+        padding: 4px 30px;
+        font-size: ;
+        } */
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+   .my_btn{
+    padding: 0rem;
+    
+  }
+  .barandImg{
+    width:300px;
+    overflow: hidden;
+  }
+  .fontS ul li a{
+    font-size: 16px;
+    font-weight: 600
+  }
+
+  }
+
+  @media screen and (min-width: 992px) {
+  body{
+    font-size: 1.4rem;
+  }
+  ul li a{
+    font-weight: bolder;
+
+  }
+  /* .my_btn{
+    padding:  0;
+
+    border-radius: 1rem;
+  } */
+  .brand-image{
+    
+}
+  }
+  
