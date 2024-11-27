@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --div-height: 46vh;
+  --bg-size: 100% 100%;
+}
+ body{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+ }
+ img{
+  width: 100%;
+  height: 100%;
+  
+ }
+
+.my_btn{
+    background-color: #FE8C45;
+    color: #ddd; 
+    /* border-radius: 2rem;
+    padding: 0 1rem; */
+}
+
+/*===== Hero section ====*/
+.hero-section{
+  background-color: #FFFFFF
+}
+.high-light-text{
+  font-size: 3.8rem;
+  font-weight: 800;
+}
+.Mid-text-color{
+  color: #8A47F6;
+}
+.header-h5{
+  font-size: 17px;
+  font-weight: 400;
+}
+.bar-sign {
+  background-color: #8A47F6;
+  width: 175px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 30px;
+}
+/* skill-photography */
+.skill-photography{
+  background-color:rgba(177, 131, 250, 0.185);
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+span.about-Hyp {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #8d6bc3;
+  margin-bottom: 4px;
+  margin-right: 5px;
+}
+.mk{
+  margin-top: -17px;
+}
+/* ===Our Portfolio Link=== */
+.Our_p_link {
+    color: #8A47F6;
+}
+
+
+ /* ==== */
+ .center_dev .right_div{
+  height: calc(var(--div-height));
+}
+
+.center_dev .left_top{
+  height: calc(var(--div-height) - 14vh);
+}
+.center_dev .left_bottom{
+  height: calc(var(--div-height) - 14vh);
+}
+ .center_dev img{
+  width: 80%;
+  object-fit: cover;
+ }
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 576px) {
+    body{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .barandImg {
+      width: 150px;
+  }
+  
+  .barandImg img {
+      width: 100%;
+      object-fit: cover;
+  }
+ 
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+   .my_btn{
+    padding: 0rem;
+    
+  }
+  .barandImg{
+    width:220px;
+    overflow: hidden;
+  }
+  .fontS {
+    font-size: 20px;
+  }
+}
+
+  }
+
+  @media screen and (min-width: 992px) {
+  body{
+    font-size: 1.4rem;
+  }
+
+  .barandImg {
+    width: 250px;
+}
+
+.barandImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+  .fontS {
+    font-size: 20px;
+  }
+
+  }
+  
